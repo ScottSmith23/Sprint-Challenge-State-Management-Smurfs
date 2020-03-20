@@ -1,3 +1,97 @@
 .App {
   text-align: center;
 }
+
+.smurfs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.smurfCard{
+  margin-top:30px;
+  margin-bottom: 30px;
+  font-family: 'Fredoka One', cursive;
+  font-size: large;
+
+}
+
+.cardstyle{
+  width: 400px;
+  border-radius: 3px;
+  height: 220px;
+  background-image: linear-gradient(#4e8afa,rgb(147, 176, 238));
+  opacity: 0.94;
+
+}
+
+.smurfTitle{
+  display: inline;
+}
+
+.smurfCardTitle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.smurfName{
+  color:lightgreen;
+}
+
+.modifyData{
+  cursor: pointer;
+}
+
+.headerTitle{
+  color:rgba(255, 145, 0, 0.726);
+
+  font-family: 'Bebas Neue', cursive;
+  font-size: 80px;
+}
+
+.buttonGet{
+  background-color: rgba(90, 87, 253, 0.89); /* Green */
+  border: none;
+  border-radius: 50px;
+  color: rgb(72, 255, 240);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Fredoka One', cursive;
+  font-size: large;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.buttonGet:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+.smurfWalk{
+
+  width:120px;
+
+}
+
+.cardBody{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputForm{
+  background-color: rgba(90, 87, 253, 0.555);
+  font-size: larger;
+  font-family: 'Fredoka One', cursive;
+  color:lightgreen;
+  width: 100%;
+}
+
+.emojiButton{
+  border: 1px solid blue;
+}
