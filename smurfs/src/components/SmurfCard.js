@@ -60,7 +60,7 @@ const handleEdit = e => {
                  </CardHeader>
              <CardBody className="cardBody">
                  <div>
-                     <CardText className="punchline">age:{!isEditing ? (<span>{smurf.age}</span>):(<span><input
+                     <CardText className="punchline">age: {!isEditing ? (<span>{smurf.age}</span>):(<span><input
             className="edit-input"
             id="age"
             type="text"
@@ -69,7 +69,7 @@ const handleEdit = e => {
             onChange={handleChanges}
           />
            </span>)}</CardText>
-               <CardText className="punchline">height:{!isEditing ? (<span>{smurf.height}</span>):(<span><input
+               <CardText className="punchline">height: {!isEditing ? (<span>{smurf.height}</span>):(<span><input
             className="edit-input"
             id="height"
             type="text"
