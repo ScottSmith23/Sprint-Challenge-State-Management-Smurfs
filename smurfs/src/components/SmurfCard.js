@@ -8,6 +8,7 @@ import {
     Col,
     Collapse
   } from "reactstrap";
+  import {Smurfwalk} from '../img/smurfwalk.gif'
 
 
 const SmurfCard = ({smurf,deleteData,editData}) => {
@@ -42,7 +43,7 @@ const handleEdit = e => {
       <div className="smurfCard"><Col >
            <Card className="cardstyle" >
              <CardHeader className="smurfTitle">
-                {!isEditing ? (<span><span className="smurfName">{smurf.name}</span>
+                {!isEditing ? (<span className="smurfCardTitle"><span className="smurfName">{smurf.name}</span>
                  <span className="modifyData">
                      <span onClick={() => setIsEditing(!isEditing)}>📝</span>
                      <span  onClick={handleDelete}>❌</span>
@@ -57,7 +58,8 @@ const handleEdit = e => {
           <span classname="modifyData" onClick={handleEdit}>✅</span>
            </span>) }
                  </CardHeader>
-             <CardBody>
+             <CardBody className="cardBody">
+                 <div>
                      <CardText className="punchline">age:{!isEditing ? (<span>{smurf.age}</span>):(<span><input
             className="edit-input"
             id="age"
@@ -76,6 +78,10 @@ const handleEdit = e => {
             onChange={handleChanges}
           />
            </span>)}</CardText>
+           </div>
+           <div>
+           <img className="smurfWalk" src={require('../img/smurfwalk.gif')} />
+           </div>
                </CardBody>
            </Card>
          </Col></div>
