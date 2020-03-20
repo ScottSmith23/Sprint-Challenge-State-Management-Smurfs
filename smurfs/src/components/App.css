@@ -43,7 +43,8 @@
 }
 
 .headerTitle{
-  color:rgb(0, 0, 0);
+  color:rgba(255, 145, 0, 0.726);
+
   font-family: 'Bebas Neue', cursive;
   font-size: 80px;
 }
@@ -81,4 +82,12 @@
 .cardBody{
   display: flex;
   justify-content: space-evenly;
+}
+
+.inputForm{
+  background-color: rgba(90, 87, 253, 0.555);
+  font-size: larger;
+  font-family: 'Fredoka One', cursive;
+  color:lightgreen;
+  width: 100%;
 }

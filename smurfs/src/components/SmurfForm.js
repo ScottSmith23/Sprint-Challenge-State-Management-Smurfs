@@ -25,8 +25,8 @@ const SmurfForm = props => {
 
   return (
     <>
-    <form onSubmit={handlePostData}>
-      <label htmlFor="name">Smurf Name</label>
+    <form className="inputForm" onSubmit={handlePostData}>
+      <label htmlFor="name">Smurf Name:</label>
       <input
         id="name"
         type="text"
@@ -34,14 +34,14 @@ const SmurfForm = props => {
         onChange={handleChanges}
         value={smurf.name}
       />
-      <label htmlFor="age">age</label>
+      <label htmlFor="age">age:</label>
       <input
         id="age"
         name="age"
         onChange={handleChanges}
         value={smurf.age}
       />
-      <label htmlFor="height">height</label>
+      <label htmlFor="height">height:</label>
       <input
         id="height"
         name="height"
