@@ -25,8 +25,17 @@
 
 }
 
-.setup{
+.smurfTitle{
+  display: inline;
+  
+}
+
+.smurfName{
   color:lightgreen;
+}
+
+.modifyData{
+  cursor: pointer;
 }
 
 .headerTitle{

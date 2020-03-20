@@ -10,7 +10,7 @@ const SmurfList = props => {
         <div className="error">{props.error}</div>
       ) : (
         props.smurfs.map(smurf =>
-             <SmurfCard smurf={smurf}/>
+             <SmurfCard smurf={smurf} deleteData={props.deleteData} editData={props.editData} />
              )
       )}
    </div> </>

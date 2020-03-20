@@ -1,4 +1,4 @@
-import { FETCH_DATA, POST_DATA, UPDATE_SMURFS, SET_ERROR } from "../actions/actions";
+import { FETCH_DATA, POST_DATA, DELETE_DATA, EDIT_DATA, UPDATE_SMURFS, SET_ERROR } from "../actions/actions";
 
 const initialState = {
   smurfs: [],
@@ -15,6 +15,16 @@ export const smurfReducer = (state = initialState, action) => {
         smurfs: []
       };
       case POST_DATA:
+      return {
+        ...state,
+        smurfs: []
+      };
+      case DELETE_DATA:
+      return {
+        ...state,
+        smurfs: []
+      };
+      case EDIT_DATA:
       return {
         ...state,
         smurfs: []

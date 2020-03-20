@@ -15,6 +15,7 @@ const SmurfForm = props => {
   const handlePostData = e => {
     e.preventDefault();
     props.postData(smurf);
+    setSmurf({ name: "", age: "",height: "" });
   };
 
   const handleChanges = e => {
@@ -45,7 +46,7 @@ const SmurfForm = props => {
         id="height"
         name="height"
         onChange={handleChanges}
-        value={smurf.role}
+        value={smurf.height}
       />
       <button className="buttonGet" type="submit">Add Smurf</button>
     </form>
