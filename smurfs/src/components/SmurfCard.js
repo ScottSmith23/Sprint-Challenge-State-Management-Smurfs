@@ -45,8 +45,8 @@ const handleEdit = e => {
              <CardHeader className="smurfTitle">
                 {!isEditing ? (<span className="smurfCardTitle"><span className="smurfName">{smurf.name}</span>
                  <span className="modifyData">
-                     <span onClick={() => setIsEditing(!isEditing)}>📝</span>
-                     <span  onClick={handleDelete}>❌</span>
+                     <span classname="emojiButton" onClick={() => setIsEditing(!isEditing)}>📝</span>
+                     <span classname="emojiButton" onClick={handleDelete}>❌</span>
                      </span></span>):(<span><input
             className="edit-input"
             id="name"

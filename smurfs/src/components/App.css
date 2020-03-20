@@ -91,3 +91,7 @@
   color:lightgreen;
   width: 100%;
 }
+
+.emojiButton{
+  border: 1px solid blue;
+}
